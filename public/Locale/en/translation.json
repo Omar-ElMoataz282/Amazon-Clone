@@ -10,7 +10,8 @@
     "cart": "Cart"
   },
   "side": {
-    "header": "Hello, Sign in",
+    "header": "Hello",
+    "header2": "Sign in",
     "trend": "Trending",
     "options": ["Best Sellers", "New Releases", "Movers & Shakers"],
     "digital": "Digital content and devices",
