@@ -103,12 +103,16 @@ function Cart() {
           )}
         </div>
 
-        <div className="d-flex justify-content-between align-items-center px-3">
-          <Button disabled={data.length === 0} onClick={addToOrder}>
+        <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 px-3">
+          <Button 
+            disabled={data.length === 0}
+            onClick={addToOrder}
+            className="order-2 order-sm-1 m-auto m-sm-0"
+            >
             {t("cart.checkout")}
           </Button>
 
-          <h5>
+          <h5 className="order-1 order-sm-1 m-auto m-sm-0">
             <span className="fw-normal">
               {t("cart.total")} ({totalItems} {t("cart.pieces")}): {""}
             </span>
