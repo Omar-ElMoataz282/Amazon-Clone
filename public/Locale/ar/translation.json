@@ -76,7 +76,10 @@
     "price": "السعر: ",
     "stock": "متوفر",
     "count": "الكمية: ",
-    "delete": "حذف"
+    "delete": "حذف",
+    "done": "Added to Cart !",
+    "notAvailable": "Not Available Any More",
+    "onlyAvailable": "Only Available {{count}} Items"
   },
   "footer": {
     "topButton": "الذهاب إلى الأعلى",
