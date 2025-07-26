@@ -77,9 +77,9 @@
     "stock": "متوفر",
     "count": "الكمية: ",
     "delete": "حذف",
-    "done": "Added to Cart !",
-    "notAvailable": "Not Available Any More",
-    "onlyAvailable": "Only Available {{count}} Items"
+    "done": "تم الإضافه الى السلة!",
+    "notAvailable": "المنتج غير متوفر",
+    "onlyAvailable": "متاح فقط {{count}} قطعة"
   },
   "footer": {
     "topButton": "الذهاب إلى الأعلى",
