@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
+  faCaretRight,
   faLocationDot,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -141,7 +142,9 @@ function TopBar() {
                   <span className="fs-12">{user + " "}</span>
                 </span>
               ) : (
-                <span>{t("nav.sign_in")} &#x2B9E; </span>
+                <span>
+                  {t("nav.sign_in")} <FontAwesomeIcon icon={faCaretRight} />{" "}
+                </span>
               )}
               <span>
                 <FontAwesomeIcon icon={faUser} />
