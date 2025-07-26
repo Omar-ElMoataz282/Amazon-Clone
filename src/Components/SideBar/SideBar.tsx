@@ -14,6 +14,9 @@ function SideBar({ isOpen, setIsOpen }: SideBarProps) {
   // For Multiple Lang
   const { t } = useTranslation();
 
+  //Get Current user
+  const user = JSON.parse(localStorage.getItem("Current-Account") || "null");
+
   // For SideBar Openening
   const show = isOpen;
 
@@ -27,7 +30,10 @@ function SideBar({ isOpen, setIsOpen }: SideBarProps) {
           <span className="bg-white text-black rounded-circle user-icon">
             <FontAwesomeIcon icon={faUser} />
           </span>
-          <h5 className="m-0 fw-bold">{t("side.header")}</h5>
+          <h5 className="m-0 fw-bold">
+            {t("side.header")},{" "}
+            {user?.name ? user.name : `${t("side.header2")}`}
+          </h5>
         </Link>
 
         <div className="list-div">
