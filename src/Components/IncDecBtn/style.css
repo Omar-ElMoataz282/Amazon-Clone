@@ -1,0 +1,35 @@
+.input-count {
+  border: none !important;
+  box-shadow: none !important;
+  height: 30px;
+}
+
+.input-count:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.increament-button,
+.decreament-button {
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  background-color: #0f1111;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+}
+
+.increament-button {
+  background-color: var(--main-color);
+  color: black;
+  border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -ms-border-radius: 0 3px 3px 0;
+  -o-border-radius: 0 3px 3px 0;
+}

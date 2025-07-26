@@ -1,0 +1,101 @@
+/*Start Top-bar*/
+.top-bar {
+  background-color: #0f1111;
+  padding-top: 7px;
+  min-height: 60px;
+}
+.top-bar input:focus,
+.top-bar select:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.top-bar input:focus {
+  border-color: #fff;
+}
+.top-bar input button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/*Logo*/
+.top-bar .logo span {
+  right: -10%;
+  top: 20%;
+}
+
+/*Location*/
+.top-bar .nav-loc span:nth-child(1) {
+  font-size: 12px;
+  color: #ddd;
+}
+.top-bar .nav-loc span:nth-of-type(2) {
+  font-size: 14px;
+}
+
+/*Search button*/
+.ser-but {
+  background-color: var(--main-color) !important;
+}
+
+/*Select And Options*/
+.sel-cat {
+  width: 100px !important;
+  font-size: 12px !important;
+  background-color: #ddd !important;
+}
+.sel-cat option {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/*Sing Buttons*/
+.sign-buttons {
+  display: none;
+}
+
+/*Arrow Language*/
+.show-ul:hover .sel-lang,
+.show-ul:hover .sign-buttons {
+  display: block !important;
+}
+.sel-lang {
+  top: 100% !important;
+  background-color: #030303;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.arrow {
+  position: absolute;
+  bottom: 0 !important;
+  border-width: 4px;
+  border-color: #ddd transparent transparent transparent;
+  border-style: solid;
+}
+
+/*Cart*/
+.cart-num {
+  left: 45%;
+  top: -10%;
+  color: orange;
+  font-weight: bold;
+}
+.cart {
+  left: 55%;
+}
+@media (max-width: 500px) {
+  .top-bar .hide-img {
+    overflow: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  .cart {
+    left: 40%;
+  }
+}

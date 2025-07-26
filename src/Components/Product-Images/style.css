@@ -1,0 +1,12 @@
+.image-gallery {
+  position: relative;
+}
+
+.image-gallery .image-gallery-thumbnails-container {
+  position: absolute;
+  transform: translate3d(0, -100px, 0px) !important;
+  -webkit-transform: translate3d(0, -100px, 0px) !important;
+  -moz-transform: translate3d(0, -100px, 0px) !important;
+  -ms-transform: translate3d(0, -100px, 0px) !important;
+  -o-transform: translate3d(0, -100px, 0px) !important;
+}

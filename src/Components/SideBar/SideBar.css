@@ -1,0 +1,75 @@
+/*Side Bar*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -150%;
+  width: 90%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -ms-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+}
+.sidebar.open {
+  left: 0;
+}
+
+/*Sidebar Header*/
+.sidebar .sidebar-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  background-color: #232f3e;
+  color: white;
+}
+
+/*User Icon*/
+.sidebar .user-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+/*sidebar list*/
+.list-div {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*SideBar Items*/
+.cat-list ul li:hover,
+.cat-list .item-link:hover,
+.list-div .item-link:hover {
+  background-color: #ddd;
+}
+.cat-list ul li a,
+.cat-list .item-link,
+.list-div .item-link {
+  color: black;
+  font-weight: 500;
+  display: flex;
+  padding: 13px 20px 13px 0;
+}
+
+/*Close Button*/
+.close {
+  background-color: #222;
+  color: white;
+  border: 1px solid #fff;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12.5px;
+  right: -12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

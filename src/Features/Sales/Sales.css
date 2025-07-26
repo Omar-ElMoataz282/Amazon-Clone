@@ -1,0 +1,18 @@
+.trans-lg {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .trans-lg {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    margin-top: -15%;
+  }
+}
+
+@media (min-width: 767px) {
+  .trans-lg {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    margin-top: -20%;
+  }
+}

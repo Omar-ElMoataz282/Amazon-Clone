@@ -1,0 +1,71 @@
+/*
+  --Global-Values--
+*/
+:root {
+  --main-color: #febd69;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3e6e6;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/*
+  --Global-Classes--
+*/
+/*Pointer*/
+.point {
+  cursor: pointer;
+}
+/*images*/
+.image-show {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+/*Link Hover*/
+.link-hover:hover {
+  text-decoration: underline;
+}
+/*Font-Size */
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+/* padding */
+.pe-100 {
+  padding-right: 100px;
+}
+.ps-100 {
+  padding-left: 100px;
+}
+/* white-space */
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+/*
+  --React Slider--
+*/
+.carousel-indicators {
+  display: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  top: -40%;
+}

@@ -1,0 +1,8 @@
+.footer {
+  background-color: #232f3e;
+  color: white;
+}
+
+.link-hover:hover {
+  text-decoration: underline;
+}

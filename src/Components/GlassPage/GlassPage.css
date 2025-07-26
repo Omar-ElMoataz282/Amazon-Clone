@@ -1,0 +1,35 @@
+.glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: #030303;
+  opacity: 0.5;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0s ease;
+  -webkit-transition: opacity 0s ease;
+  -moz-transition: opacity 0s ease;
+  -ms-transition: opacity 0s ease;
+  -o-transition: opacity 0s ease;
+}
+
+.fade-exit {
+  opacity: 0;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300s ease;
+  -webkit-transition: opacity 300s ease;
+  -moz-transition: opacity 300s ease;
+  -ms-transition: opacity 300s ease;
+  -o-transition: opacity 300s ease;
+}

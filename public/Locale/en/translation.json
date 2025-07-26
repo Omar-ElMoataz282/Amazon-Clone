@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "location": "Deliver to",
+    "country": "Egypt",
+    "sign": "Hello",
+    "signIn": "Sign in",
+    "sign_in": "Sign in",
+    "account": "Account & Lists",
+    "orders": "Orders",
+    "cart": "Cart"
+  },
+  "side": {
+    "header": "Hello, Sign in",
+    "trend": "Trending",
+    "options": ["Best Sellers", "New Releases", "Movers & Shakers"],
+    "digital": "Digital content and devices",
+    "kindle": "Amazon Kindle E-readers",
+    "category": "Shop by Category",
+    "more": "See more",
+    "less": "See less",
+    "help": "Help & Settings",
+    "account": "Your Account",
+    "help2": "Help",
+    "sign": "Sign in",
+    "lang": "Change Language"
+  },
+  "select": {
+    "all": "All",
+    "options": []
+  },
+  "sales": {
+    "items": [
+      "Enjoy Prime on us",
+      "Last chance deals",
+      "Fashion Week Sale | Extra 20% off",
+      "What's trending?",
+      "Deals corner for you",
+      "Buy 5 Get 5% off",
+      "Makeup | New arrivals",
+      "Last Chance | Fashion"
+    ],
+    "more": "See more"
+  },
+  "products": {
+    "show": "Show products:"
+  },
+  "product_details": {
+    "title": "Product Title: ",
+    "brand": "Brand: ",
+    "description": "Description: ",
+    "price": "Price: ",
+    "stock": "In Stock",
+    "count": "Count: ",
+    "delete": "Delete"
+  },
+  "footer": {
+    "topButton": "Back to top",
+    "sectionsHeaders": {
+      "one": "Get to Know Us",
+      "two": "Shop With Us",
+      "three": "Make Money with Us",
+      "four": "Let Us Help You"
+    },
+    "sectionOne": ["About Amazon", "Careers", "Amazon Science"],
+    "sectionTwo": [
+      "Your Account",
+      "Your Orders",
+      "Your Addresses",
+      "Your Lists"
+    ],
+    "sectionThree": [
+      "Protect and build your brand",
+      "Advertise Your Products",
+      "Sell on Amazon",
+      "Fulfillment by Amazon",
+      "Supply to Amazon"
+    ],
+    "sectionFour": [
+      "Help",
+      "Shipping & Delivery",
+      "Returns & Replacements",
+      "Recalls and Product Safety Alerts",
+      "Amazon App Download"
+    ]
+  },
+  "addToCart": "Add To Cart",
+  "cart": {
+    "header": "Shopping Cart",
+    "price": "Price",
+    "total": "Total",
+    "pieces": "Items",
+    "checkout": "Checkout",
+    "empty": "Your cart is empty."
+  },
+  "auth": {
+    "register": {
+      "header": "Sign in or ",
+      "headerLink": "create an account",
+      "button": "Register"
+    },
+    "login": {
+      "header": "Sign in",
+      "button": "Sign in"
+    },
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "footer": "By continuing, you agree to Amazon's",
+    "footerLink": "Conditions of Use",
+    "and": "and",
+    "footerLink2": "Privacy Notice",
+    "help": "Need help?",
+    "errFields": "Please fill all the fields",
+    "errExist": "Account Already Exist",
+    "errWrong": "Wrong email or password",
+    "registerLink": "Regsiter",
+    "loginLink": "LogIn",
+    "signOut": "Sign Out"
+  },
+  "orders": {
+    "header": "Order",
+    "name": "Name",
+    "brand": "Brand",
+    "price": "Price",
+    "count": "Count",
+    "total": "Total",
+    "noOrders": "You have no orders."
+  }
+}

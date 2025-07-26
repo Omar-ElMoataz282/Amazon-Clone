@@ -1,0 +1,7 @@
+.price-cart span {
+  content: attr(data-type);
+  color: gray;
+  position: absolute;
+  bottom: -25%;
+  font-size: 15px;
+}
