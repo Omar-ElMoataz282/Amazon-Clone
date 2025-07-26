@@ -103,11 +103,15 @@ function ProductDetails() {
               refresh!.setIsChanged((prev) => !prev);
 
               if (!result.success) {
-                setErr(result.message);
+                setErr(
+                  t("product_details.onlyAvailable", {
+                    count: Number(result.message),
+                  })
+                );
                 setSuccess("");
                 setTimeout(() => setErr(""), 2000);
               } else {
-                setSuccess(result.message);
+                setSuccess(`${t(`${result.message}`)}`);
                 setErr("");
                 setTimeout(() => setSuccess(""), 1000);
               }
