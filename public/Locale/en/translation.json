@@ -51,7 +51,10 @@
     "price": "Price: ",
     "stock": "In Stock",
     "count": "Count: ",
-    "delete": "Delete"
+    "delete": "Delete",
+    "done": "Added to Cart !",
+    "notAvailable": "Not Available Any More",
+    "onlyAvailable": "Only Available {{count}} Items"
   },
   "footer": {
     "topButton": "Back to top",
