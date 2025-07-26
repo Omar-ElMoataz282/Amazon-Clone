@@ -13,12 +13,12 @@ function AddToLocalStorage(data: DataTypesLocalStorage, count: number) {
     if (data.stock - currentCount >= 1) {
       return {
         success: false,
-        message: `Only ${data.stock - currentCount} Available`,
+        message: `${data.stock - currentCount}`,
       };
     } else {
       return {
         success: false,
-        message: `Not Available Any More`,
+        message: `product_details.notAvailable`,
       };
     }
   }
@@ -35,7 +35,7 @@ function AddToLocalStorage(data: DataTypesLocalStorage, count: number) {
 
   return {
     success: true,
-    message: "Done!",
+    message: "product_details.done",
   };
 }
 
