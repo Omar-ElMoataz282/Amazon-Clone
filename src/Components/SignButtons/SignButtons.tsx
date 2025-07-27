@@ -7,6 +7,7 @@ import {
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { Button } from "react-bootstrap";
 
 function SignButtons() {
   const { t } = useTranslation();
@@ -53,12 +54,15 @@ function SignButtons() {
       ) : (
         <li
           className={`py-2  d-flex align-items-center gap-3 text-nowrap ${
-            isArabic ? "pe-3 ps-100" : "ps-3 pe-100"
+            isArabic ? "pe-3 ps-4" : "ps-3 pe-4"
           }`}
           onClick={signOut}
         >
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          {t("auth.signOut")}
+          <Button className="d-flex align-items-center gap-3 text-nowrap bg-transparent border-0 p-0">
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+
+            {t("auth.signOut")}
+          </Button>
         </li>
       )}
     </ul>
