@@ -15,7 +15,11 @@ function SearchBar({ sendShow }: { sendShow: (show: boolean) => void }) {
 
   function handleSearch() {
     console.log("Search");
-    navigate(`/search-result?query=${encodeURIComponent(searchValue)}`);
+    if (searchValue !== "") {
+      navigate(`/search-result?query=${encodeURIComponent(searchValue)}`);
+    } else {
+      window.alert("Please enter a search query.");
+    }
   }
 
   return (

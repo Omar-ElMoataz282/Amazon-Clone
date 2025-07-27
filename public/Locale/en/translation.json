@@ -129,5 +129,6 @@
     "count": "Count",
     "total": "Total",
     "noOrders": "You have no orders."
-  }
+  },
+  "search": "Search Result:"
 }

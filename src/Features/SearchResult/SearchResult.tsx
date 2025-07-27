@@ -3,8 +3,11 @@ import { useDataSWR } from "../../Utils/SWR";
 import { ProductsApi } from "../../Utils/Apis";
 import type { DataTypesProduct } from "../../Types/Types";
 import ProductCard from "../../Components/ProductCard/ProductCard";
+import { useTranslation } from "react-i18next";
 
 function SearchResult() {
+  const { t } = useTranslation();
+
   const [searchParams] = useSearchParams();
   const query = searchParams.get("query");
 
@@ -31,7 +34,10 @@ function SearchResult() {
 
   return (
     <div className="px-3 py-2">
-      <h3 className="py-2">SearchResult: </h3>
+      <h3 className="py-2">
+        {t("search")}
+        {query}
+      </h3>
       <div className="gap-4 products-container">
         {showProducts.length > 0 ? (
           showProducts
