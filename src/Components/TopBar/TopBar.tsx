@@ -24,6 +24,7 @@ import { CartItems } from "../../Contexts/RefreshData";
 import SignButtons from "../SignButtons/SignButtons";
 import SearchBar from "../SearchBar/SearchBar";
 import GetCurrentUser from "../../Utils/GetCurrentUser";
+import { Button } from "react-bootstrap";
 
 function TopBar() {
   //For Count in Cart
@@ -135,7 +136,7 @@ function TopBar() {
               <span className="arrow mb-2"></span>
             </p>
 
-            <p className="d-block d-sm-none m-0 fs-13 ws-nowrap pb-1">
+            <Button className="d-block d-sm-none m-0 fs-13 ws-nowrap p-0 pb-1 bg-transparent border-0">
               {user ? (
                 <span>
                   <span className="fs-12">{user + " "}</span>
@@ -148,7 +149,7 @@ function TopBar() {
               <span>
                 <FontAwesomeIcon icon={faUser} />
               </span>
-            </p>
+            </Button>
             <SignButtons />
           </div>
 
