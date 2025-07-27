@@ -14,7 +14,6 @@ function SearchBar({ sendShow }: { sendShow: (show: boolean) => void }) {
   const isArabic = lang === "ar";
 
   function handleSearch() {
-    console.log("Search");
     if (searchValue !== "") {
       navigate(`/search-result?query=${encodeURIComponent(searchValue)}`);
       setSearchValue("")
