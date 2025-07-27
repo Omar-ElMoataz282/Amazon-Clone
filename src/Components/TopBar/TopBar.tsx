@@ -23,18 +23,15 @@ import GetDataFromLocalStorage from "../../Utils/GetDataFromStorage";
 import { CartItems } from "../../Contexts/RefreshData";
 import SignButtons from "../SignButtons/SignButtons";
 import SearchBar from "../SearchBar/SearchBar";
+import GetCurrentUser from "../../Utils/GetCurrentUser";
 
 function TopBar() {
   //For Count in Cart
   const [count, setCount] = useState(0);
   const refresh = useContext(CartItems);
 
-  //For Current User
-  const getName =
-    JSON.parse(localStorage.getItem("Current-Account") || "null")?.name || "";
-
-  //Get Current User
-  const user = getName.charAt(0).toUpperCase() + getName.slice(1);
+  // For Current User
+  const user = GetCurrentUser();
 
   //Get Screen size
   const screenSize = useScreenSize() as number;
@@ -69,7 +66,7 @@ function TopBar() {
           <div className="d-flex col-12 col-xl-5 align-self-center">
             <FontAwesomeIcon
               icon={faBars}
-              className="ms-2 mt-2 pt-1 point d-sm-none"
+              className="ms-2 mt-1 pt-1 point fs-5 d-sm-none"
               onClick={() => setIsOpen(true)}
             />
 

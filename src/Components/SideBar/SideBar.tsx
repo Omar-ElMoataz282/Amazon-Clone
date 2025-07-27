@@ -9,13 +9,14 @@ import { Link } from "react-router-dom";
 import Settings from "../SideBarItems/Settings/Setting";
 import { useTranslation } from "react-i18next";
 import type { SideBarProps } from "../../Types/Types";
+import GetCurrentUser from "../../Utils/GetCurrentUser";
 
 function SideBar({ isOpen, setIsOpen }: SideBarProps) {
   // For Multiple Lang
   const { t } = useTranslation();
 
-  //Get Current user
-  const user = JSON.parse(localStorage.getItem("Current-Account") || "null");
+  // For Current User
+  const user = GetCurrentUser();
 
   // For SideBar Openening
   const show = isOpen;
@@ -26,13 +27,12 @@ function SideBar({ isOpen, setIsOpen }: SideBarProps) {
   return (
     <>
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
-        <Link to="#" className="sidebar-header">
+        <Link to={user ? "#" : "/register"} className="sidebar-header">
           <span className="bg-white text-black rounded-circle user-icon">
             <FontAwesomeIcon icon={faUser} />
           </span>
           <h5 className="m-0 fw-bold">
-            {t("side.header")},{" "}
-            {user?.name ? user.name : `${t("side.header2")}`}
+            {t("side.header")}, {user ? user : `${t("side.header2")}`}
           </h5>
         </Link>
 
