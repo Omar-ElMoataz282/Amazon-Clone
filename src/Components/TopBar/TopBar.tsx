@@ -66,7 +66,9 @@ function TopBar() {
           <div className="d-flex col-12 col-xl-5 align-self-center">
             <FontAwesomeIcon
               icon={faBars}
-              className="ms-2 mt-1 pt-1 point fs-5 d-sm-none"
+              className={`mt-1 pt-1 point fs-5 d-sm-none ${
+                isArabic ? "me-2" : "ms-2"
+              }`}
               onClick={() => setIsOpen(true)}
             />
 
