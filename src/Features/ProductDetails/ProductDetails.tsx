@@ -55,15 +55,12 @@ function ProductDetails() {
   }, [data, currentCount]);
 
   return (
-    <div
-      className="product-details d-flex flex-wrap"
-      style={{ height: "calc(100vh - 60px)" }}
-    >
+    <div className="d-flex flex-wrap" style={{ height: "calc(100vh - 60px)" }}>
       <div className="col-10 m-auto col-md-5">
         <ProductImages />
       </div>
 
-      <div className="col-md-7 d-flex flex-column justify-content-center px-2 px-md-5">
+      <div className="col-md-7 d-flex flex-column justify-content-center px-3 pb-2 px-md-5">
         <div>
           <h2 className="m-0">
             {t("product_details.title")} {data?.title}
