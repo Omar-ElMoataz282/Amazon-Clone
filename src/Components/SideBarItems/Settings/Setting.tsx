@@ -27,6 +27,10 @@ function Settings() {
         {t("side.account")}
       </Link>
 
+      <Link className={`item-link ${isArabic}`} to="/orders">
+        {t("nav.orders")}
+      </Link>
+
       <Link className={`item-link ${isArabic}`} to="#">
         {t("side.help2")}
       </Link>
