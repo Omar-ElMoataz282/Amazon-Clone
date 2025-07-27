@@ -10,6 +10,7 @@ import AddToLocalStorage from "../../Utils/AddToLocalStorage";
 import { useContext, useEffect, useState } from "react";
 import getCurrentCountFromStorage from "../../Utils/GetCountFromStorage";
 import { CartItems } from "../../Contexts/RefreshData";
+import { ToastContainer, toast } from "react-toastify";
 
 function ProductDetails() {
   // Get Id From Url
@@ -21,15 +22,9 @@ function ProductDetails() {
   //For Refresh
   const refresh = useContext(CartItems);
 
-  //For Count Check
-  const [err, setErr] = useState("");
-  const [success, setSuccess] = useState("");
-
   //Get Count From Local Storage
   const currentCount = getCurrentCountFromStorage(Number(id));
   const [disabled, setDisabled] = useState(false);
-
-  const style = `text-white fs-5 p-2 mt-2 rounded-1 text-center fw-bold`;
 
   //For Translation
   const { t } = useTranslation();
@@ -100,25 +95,20 @@ function ProductDetails() {
               refresh!.setIsChanged((prev) => !prev);
 
               if (!result.success) {
-                setErr(
-                  t("product_details.onlyAvailable", {
-                    count: Number(result.message),
-                  })
-                );
-                setSuccess("");
-                setTimeout(() => setErr(""), 2000);
+                const toastMsg = t("product_details.onlyAvailable", {
+                  count: Number(result.message),
+                });
+                toast.error(toastMsg);
               } else {
-                setSuccess(`${t(`${result.message}`)}`);
-                setErr("");
-                setTimeout(() => setSuccess(""), 1000);
+                const toastMsg = t(result.message);
+                toast.success(toastMsg);
               }
             }}
           >
             {data ? t("addToCart") : "Loading..."}
           </Button>
         </div>
-        {err && <p className={`bg-danger ${style}`}>{err}</p>}
-        {success && <p className={`bg-success ${style}`}>{success}</p>}
+        <ToastContainer />
       </div>
     </div>
   );
