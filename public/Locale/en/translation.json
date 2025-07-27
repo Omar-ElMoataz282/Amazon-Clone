@@ -117,7 +117,7 @@
     "errFields": "Please fill all the fields",
     "errExist": "Account Already Exist",
     "errWrong": "Wrong email or password",
-    "registerLink": "Regsiter",
+    "registerLink": "Register",
     "loginLink": "LogIn",
     "signOut": "Sign Out"
   },
