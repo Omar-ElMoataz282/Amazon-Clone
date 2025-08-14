@@ -62,7 +62,7 @@ function TopBar() {
         className="top-bar position-relative text-white px-2 pb-3 pb-md-1 d-flex align-items-stretch justify-content-between flex-wrap"
       >
         {/*Amazon Logo*/}
-        <div className="col-6  col-sm-4 col-md-2 d-flex justify-content-between justify-content-lg-center order-1 order-md-1">
+        <div className="col-6  col-sm-4 col-md-2 d-flex justify-content-between justify-content-xxl-center order-1 order-md-1">
           {/*First Section Logo*/}
           <div className="d-flex col-12 col-xl-5 align-self-center">
             <FontAwesomeIcon
